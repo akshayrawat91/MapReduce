@@ -63,12 +63,12 @@ public class mutualFriend {
 	public static class Reduce extends Reducer<Text, Text, Text, Text>{
 		public void reduce(Text key, Iterable<Text> values, Context context)
 				throws IOException, InterruptedException {
-			ArrayList<String> input = new ArrayList<>();
-			input.add("0,4	");
-			input.add("20,22939	");
-			input.add("1,29826	");
-			input.add("6222,19272	");
-			input.add("28041,28056	");
+			//ArrayList<String> input = new ArrayList<>();
+			//input.add("0,4	");
+			//input.add("20,22939	");
+			//input.add("1,29826	");
+			//input.add("6222,19272	");
+			//input.add("28041,28056	");
 			Text []ar = new Text[2];
 			int index = 0;
 			for(Text it:values)
@@ -93,7 +93,7 @@ public class mutualFriend {
 					}
 				}
 			}
-			if(input.contains(key.toString()))
+			//if(input.contains(key.toString()))
 				context.write( key, new Text(res) );
 				
 		}
