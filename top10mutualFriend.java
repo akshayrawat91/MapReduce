@@ -1,3 +1,6 @@
+/* @author akshayrawat91
+reference - amruth94bruce "TopRated.java" https://github.com/akshayrawat91/MapReduce-1/blob/master/TopRated.java
+*/
 
 import java.io.BufferedReader;
 import java.io.File;
